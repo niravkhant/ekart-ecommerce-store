@@ -8,7 +8,7 @@ const Category = ({ categories }) => {
                 {categories &&
                     categories?.data?.map((item) => (
                         <div key={item.id} className="category">
-                            <img src={import.meta.env.VITE_DEV_URL + item.attributes.img.data.attributes.url} alt="" />
+                            <img src={item.attributes.img.data.attributes.url} alt="" />
                         </div>
                     ))}
             </div>

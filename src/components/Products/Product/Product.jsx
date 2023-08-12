@@ -7,7 +7,7 @@ const Product = ({ id, data }) => {
         <>
             <div className="product-card" onClick={() => navigate("/product/" + id)}>
                 <div className="thumbnail">
-                    <img src={import.meta.env.VITE_DEV_URL + data.images.data[0].attributes.url} alt="" />
+                    <img src={data.images.data[0].attributes.url} alt="" />
                 </div>
                 <div className="prod-details">
                     <span className="name">{data.title}</span>
